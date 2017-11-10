@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<title>Eat-Da-Burger</title>
+	<script
+		src="https://code.jquery.com/jquery-3.2.1.js"
+		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous">
+	</script>
+	<!-- <script src="/assets/js/cats.js"></script> -->
+</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<header>
+					<h1>Eat Da Burger!</h1>
+				</header>
+			</div>
+
+			<div class="row burger-row">
+				<div class="col-xs-12 col-md-6">
+					<div class="card">
+  						<div class="card-block">
+    						<ol>
+							  <!-- {{#each uneatenBurger}} -->
+							  	<li>
+								    <!-- {{name}} -->
+								    Mushroom Swiss Burger
+								    <button class="devour-burger" data-id="{{this.id}}">
+						      			Devour it!
+						    		</button>
+						    	</li>
+							  <!-- {{/each}} -->
+							</ol>
+  						</div> <!-- end div class="card-block" -->
+					</div> <!-- end div class="card" -->
+				</div> <!-- end div class="col..." -->
+
+				<div class="col-xs-12 col-md-6">
+					<div class="card">
+						<div class="card-block">
+							<ol>
+								<li>
+									<!-- {{#each eatenBurger}}
+										{{name}}
+									{{/each}} -->
+									BBQ Bacon Burger
+								</li>
+							</ol>
+						</div> <!-- end div class="card-block" -->
+					</div> <!-- end div class="card" -->
+				</div> <!-- end div class="col..." -->
+			</div> <!-- end div class="row burger-row" -->
+
+			<div class="card new-burger">
+  				<div class="card-block">
+    				<h4 class="card-title">Enter a burger you want to eat and then click Submit</h4>
+    				<form class="add-burger-form">
+					  	<div class="form-group">
+			    			<textarea class="form-control" id="new-burger" name="burgerName" placeholder="Yummy burger"></textarea>
+			  			</div> <!-- end div class="form-group" -->
+			  			<button id="btn-submit" type="submit" class="btn btn-primary">Submit</button>
+					</form>
+  				</div> <!--  end div class="card-block" -->
+			</div> <!-- end div class="card" -->
+
+		</div> <!-- end div class="container" -->
+	</body>
+	
+</html>

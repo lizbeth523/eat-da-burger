@@ -1,0 +1,33 @@
+h1 {
+	font-family: "AR Delaney", "Harlow Solid Italic", "Bauhaus 93", "Goudy Stout", "Magneto";
+	font-size: 6em;
+	text-align: center;
+}
+
+header {
+	margin: auto;
+}
+
+body { 
+	background: url("../images/burger.jpg") no-repeat center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.card {
+	margin: 15vh auto 15vh auto;
+}
+
+.container {
+  justify-content: center;
+}
+
+.new-burger {
+	padding: 1em;
+	width: 60%;
+}
+
+
+ 
